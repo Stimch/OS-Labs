@@ -31,7 +31,7 @@ int main() {
 
     // Открываем файл с правами на чтение и запись
     fd = open(output_filename, O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
-    if (fd == -1) {
+    if (fd == -1) {S_IRUSR | S_IWUSR
         perror("Error opening file.");
         exit(1);
     }
